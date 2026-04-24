@@ -1,0 +1,28 @@
+{
+  "name": "transparent_tree",
+  "transparency": "fully_auditable_tree_on_pixel_features",
+  "transparency_tag": "fully_auditable",
+  "threshold": 0.8474187272476801,
+  "feature_manifest": [
+    "geom_area_ratio",
+    "geom_perim_ratio",
+    "geom_compactness",
+    "geom_solidity",
+    "geom_convexity_defects",
+    "geom_eccentricity",
+    "geom_aspect_ratio",
+    "asym_horizontal",
+    "asym_vertical",
+    "asym_diagonal",
+    "asym_centroid_offset",
+    "border_radial_variance",
+    "border_gradient",
+    "color_hue_std",
+    "color_sat_std",
+    "color_val_std",
+    "color_rgb_std_mean",
+    "color_darkness",
+    "color_n_regions",
+    "color_variegation"
+  ]
+}

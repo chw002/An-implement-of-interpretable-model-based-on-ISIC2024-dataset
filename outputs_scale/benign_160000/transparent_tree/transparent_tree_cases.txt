@@ -1,0 +1,90 @@
+=== true_positive_malignant ===
+Transparent-Tree — shallow decision tree on pixel-derived features.
+  Validation-tuned threshold τ = 0.846
+  Tree max depth = 4   min samples / leaf = 30
+  Rule path taken:
+    color_hue_std              scaled=0.079 > 0.018
+    geom_area_ratio            scaled=0.094 > 0.081
+    asym_horizontal            scaled=0.413 > 0.000
+    border_gradient            scaled=0.156 > 0.042
+  → leaf class counts [benign,malignant] = [0.1210598316769907, 0.8789401683228204]
+  → leaf P(malignant) = 0.879  →  MALIGNANT
+
+Transparent-Tree — shallow decision tree on pixel-derived features.
+  Validation-tuned threshold τ = 0.846
+  Tree max depth = 4   min samples / leaf = 30
+  Rule path taken:
+    color_hue_std              scaled=0.719 > 0.018
+    geom_area_ratio            scaled=0.603 > 0.081
+    asym_horizontal            scaled=0.124 > 0.000
+    border_gradient            scaled=0.053 > 0.042
+  → leaf class counts [benign,malignant] = [0.1210598316769907, 0.8789401683228204]
+  → leaf P(malignant) = 0.879  →  MALIGNANT
+
+=== false_negative_malignant ===
+Transparent-Tree — shallow decision tree on pixel-derived features.
+  Validation-tuned threshold τ = 0.846
+  Tree max depth = 4   min samples / leaf = 30
+  Rule path taken:
+    color_hue_std              scaled=0.005 <= 0.018
+    color_sat_std              scaled=0.019 <= 0.060
+    asym_diagonal              scaled=1.000 > 0.307
+    color_darkness             scaled=0.100 <= 0.241
+  → leaf class counts [benign,malignant] = [0.8348776163270387, 0.1651223836729613]
+  → leaf P(malignant) = 0.165  →  BENIGN
+
+Transparent-Tree — shallow decision tree on pixel-derived features.
+  Validation-tuned threshold τ = 0.846
+  Tree max depth = 4   min samples / leaf = 30
+  Rule path taken:
+    color_hue_std              scaled=0.010 <= 0.018
+    color_sat_std              scaled=0.094 > 0.060
+    color_val_std              scaled=0.076 <= 0.130
+    geom_convexity_defects     scaled=0.316 <= 0.500
+  → leaf class counts [benign,malignant] = [0.8177730819332145, 0.18222691806675673]
+  → leaf P(malignant) = 0.182  →  BENIGN
+
+=== false_positive_benign ===
+Transparent-Tree — shallow decision tree on pixel-derived features.
+  Validation-tuned threshold τ = 0.846
+  Tree max depth = 4   min samples / leaf = 30
+  Rule path taken:
+    color_hue_std              scaled=0.101 > 0.018
+    geom_area_ratio            scaled=0.097 > 0.081
+    asym_horizontal            scaled=0.087 > 0.000
+    border_gradient            scaled=0.381 > 0.042
+  → leaf class counts [benign,malignant] = [0.1210598316769907, 0.8789401683228204]
+  → leaf P(malignant) = 0.879  →  MALIGNANT
+
+Transparent-Tree — shallow decision tree on pixel-derived features.
+  Validation-tuned threshold τ = 0.846
+  Tree max depth = 4   min samples / leaf = 30
+  Rule path taken:
+    color_hue_std              scaled=0.713 > 0.018
+    geom_area_ratio            scaled=0.105 > 0.081
+    asym_horizontal            scaled=0.205 > 0.000
+    border_gradient            scaled=0.063 > 0.042
+  → leaf class counts [benign,malignant] = [0.1210598316769907, 0.8789401683228204]
+  → leaf P(malignant) = 0.879  →  MALIGNANT
+
+=== true_negative_benign ===
+Transparent-Tree — shallow decision tree on pixel-derived features.
+  Validation-tuned threshold τ = 0.846
+  Tree max depth = 4   min samples / leaf = 30
+  Rule path taken:
+    color_hue_std              scaled=0.018 > 0.018
+    geom_area_ratio            scaled=0.025 <= 0.081
+    geom_compactness           scaled=0.031 <= 0.031
+  → leaf class counts [benign,malignant] = [1.0, 0.0]
+  → leaf P(malignant) = 0.000  →  BENIGN
+
+Transparent-Tree — shallow decision tree on pixel-derived features.
+  Validation-tuned threshold τ = 0.846
+  Tree max depth = 4   min samples / leaf = 30
+  Rule path taken:
+    color_hue_std              scaled=0.008 <= 0.018
+    color_sat_std              scaled=0.048 <= 0.060
+    asym_diagonal              scaled=0.171 <= 0.307
+    color_darkness             scaled=0.478 > 0.402
+  → leaf class counts [benign,malignant] = [1.0, 0.0]
+  → leaf P(malignant) = 0.000  →  BENIGN

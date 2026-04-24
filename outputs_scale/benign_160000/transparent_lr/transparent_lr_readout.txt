@@ -1,0 +1,101 @@
+# Transparent-LR readout
+
+Formula: logit = Σ wᵢ · scaled(xᵢ) + bias
+  bias        = -0.8196
+  threshold τ = 0.526
+  n features  = 20
+
+## Weights (ranked by |w|)
+  color_rgb_std_mean          w = -17.3731
+  color_val_std               w = +17.1301
+  color_sat_std               w = -6.9776
+  geom_perim_ratio            w = +6.1882
+  geom_compactness            w = -3.8975
+  geom_convexity_defects      w = +3.2693
+  color_hue_std               w = +2.9251
+  border_gradient             w = +2.7843
+  color_darkness              w = +1.7980
+  asym_centroid_offset        w = +1.6482
+  geom_area_ratio             w = -1.1586
+  geom_eccentricity           w = -1.0319
+  border_radial_variance      w = -0.8632
+  color_variegation           w = +0.6599
+  asym_vertical               w = +0.6023
+  geom_aspect_ratio           w = +0.3870
+  asym_diagonal               w = -0.2806
+  geom_solidity               w = -0.2204
+  color_n_regions             w = -0.0940
+  asym_horizontal             w = +0.0267
+
+## Representative cases (validation-tuned threshold)
+### true_positive_malignant · image_id=ISIC_0664841 · prob=0.973 → MALIGNANT
+  logit = +3.577  (bias = -0.820)
+    color_val_std               contrib = +2.366
+    color_hue_std               contrib = +2.028
+    geom_perim_ratio            contrib = +1.947
+    color_rgb_std_mean          contrib = -1.940
+    geom_convexity_defects      contrib = +1.893
+    color_darkness              contrib = +1.079
+
+### true_positive_malignant · image_id=ISIC_7748442 · prob=0.961 → MALIGNANT
+  logit = +3.195  (bias = -0.820)
+    color_hue_std               contrib = +2.737
+    geom_convexity_defects      contrib = +1.893
+    geom_perim_ratio            contrib = +1.293
+    color_rgb_std_mean          contrib = -1.105
+    color_val_std               contrib = +0.906
+    geom_eccentricity           contrib = -0.871
+
+### false_negative_malignant · image_id=ISIC_9420821 · prob=0.147 → BENIGN
+  logit = -1.757  (bias = -0.820)
+    color_rgb_std_mean          contrib = -4.218
+    color_val_std               contrib = +4.006
+    color_sat_std               contrib = -1.357
+    geom_convexity_defects      contrib = +0.860
+    geom_compactness            contrib = -0.819
+    geom_eccentricity           contrib = -0.795
+
+### false_negative_malignant · image_id=ISIC_2538516 · prob=0.232 → BENIGN
+  logit = -1.196  (bias = -0.820)
+    color_rgb_std_mean          contrib = -1.026
+    color_val_std               contrib = +1.010
+    geom_eccentricity           contrib = -0.903
+    color_darkness              contrib = +0.508
+    geom_convexity_defects      contrib = +0.344
+    geom_compactness            contrib = -0.294
+
+### false_positive_benign · image_id=ISIC_6569920 · prob=0.995 → MALIGNANT
+  logit = +5.199  (bias = -0.820)
+    color_hue_std               contrib = +2.778
+    geom_convexity_defects      contrib = +2.237
+    color_val_std               contrib = +2.202
+    color_rgb_std_mean          contrib = -1.542
+    geom_perim_ratio            contrib = +1.217
+    geom_eccentricity           contrib = -0.832
+
+### false_positive_benign · image_id=ISIC_2759370 · prob=0.987 → MALIGNANT
+  logit = +4.328  (bias = -0.820)
+    color_hue_std               contrib = +2.174
+    border_gradient             contrib = +1.968
+    color_darkness              contrib = +1.340
+    geom_perim_ratio            contrib = +1.111
+    color_sat_std               contrib = -1.050
+    color_val_std               contrib = +0.923
+
+### true_negative_benign · image_id=ISIC_5313485 · prob=0.009 → BENIGN
+  logit = -4.713  (bias = -0.820)
+    color_sat_std               contrib = -6.615
+    border_gradient             contrib = +2.784
+    geom_compactness            contrib = -2.637
+    color_val_std               contrib = +2.544
+    color_rgb_std_mean          contrib = -2.188
+    color_darkness              contrib = +1.748
+
+### true_negative_benign · image_id=ISIC_3115416 · prob=0.011 → BENIGN
+  logit = -4.521  (bias = -0.820)
+    color_sat_std               contrib = -6.440
+    geom_compactness            contrib = -3.067
+    border_gradient             contrib = +2.784
+    color_val_std               contrib = +2.473
+    color_rgb_std_mean          contrib = -1.929
+    color_darkness              contrib = +1.741

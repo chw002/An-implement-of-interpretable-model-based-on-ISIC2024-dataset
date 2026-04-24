@@ -1,0 +1,545 @@
+{
+  "pipeline": "transparent_tree",
+  "transparency": "fully_auditable_tree_on_pixel_features",
+  "transparency_tag": "fully_auditable",
+  "threshold": 0.8406186953597877,
+  "max_depth": 4,
+  "min_samples_leaf": 30,
+  "feature_columns": [
+    "geom_area_ratio",
+    "geom_perim_ratio",
+    "geom_compactness",
+    "geom_solidity",
+    "geom_convexity_defects",
+    "geom_eccentricity",
+    "geom_aspect_ratio",
+    "asym_horizontal",
+    "asym_vertical",
+    "asym_diagonal",
+    "asym_centroid_offset",
+    "border_radial_variance",
+    "border_gradient",
+    "color_hue_std",
+    "color_sat_std",
+    "color_val_std",
+    "color_rgb_std_mean",
+    "color_darkness",
+    "color_n_regions",
+    "color_variegation"
+  ],
+  "scaler": {
+    "mins": {
+      "geom_area_ratio": 0.0,
+      "geom_perim_ratio": 0.0,
+      "geom_compactness": 0.0,
+      "geom_solidity": 0.0,
+      "geom_convexity_defects": 0.0,
+      "geom_eccentricity": 0.0,
+      "geom_aspect_ratio": 0.0,
+      "asym_horizontal": 0.0,
+      "asym_vertical": 0.0,
+      "asym_diagonal": 0.0,
+      "asym_centroid_offset": 0.0,
+      "border_radial_variance": 1.0867124193978003e-13,
+      "border_gradient": 0.0193157158792018,
+      "color_hue_std": 0.0,
+      "color_sat_std": 0.0021013559130603,
+      "color_val_std": 0.0032423087973397,
+      "color_rgb_std_mean": 0.0010807695991132,
+      "color_darkness": 0.0139080265625972,
+      "color_n_regions": 0.0,
+      "color_variegation": -5.58110620368793e-09
+    },
+    "maxs": {
+      "geom_area_ratio": 0.9922027587890624,
+      "geom_perim_ratio": 10.174997344993422,
+      "geom_compactness": 9.0,
+      "geom_solidity": 1.0,
+      "geom_convexity_defects": 0.68,
+      "geom_eccentricity": 0.9999976188544476,
+      "geom_aspect_ratio": 1.0,
+      "asym_horizontal": 0.946160198181757,
+      "asym_vertical": 0.946222791287156,
+      "asym_diagonal": 0.9999999999981664,
+      "asym_centroid_offset": 0.5,
+      "border_radial_variance": 0.9408919953681342,
+      "border_gradient": 1.0,
+      "color_hue_std": 0.5,
+      "color_sat_std": 0.5,
+      "color_val_std": 0.5,
+      "color_rgb_std_mean": 0.5,
+      "color_darkness": 0.9993761488970588,
+      "color_n_regions": 0.6666666666666666,
+      "color_variegation": 0.613066001241025
+    }
+  },
+  "leaves": [
+    {
+      "node": 4,
+      "class_counts": [
+        0.25312380966607895,
+        0.7468761903339382
+      ],
+      "p_malignant": 0.7468761903339254
+    },
+    {
+      "node": 5,
+      "class_counts": [
+        1.0,
+        0.0
+      ],
+      "p_malignant": 0.0
+    },
+    {
+      "node": 7,
+      "class_counts": [
+        0.8318027382514223,
+        0.1681972617485841
+      ],
+      "p_malignant": 0.16819726174858302
+    },
+    {
+      "node": 8,
+      "class_counts": [
+        0.5185007983363604,
+        0.4814992016634821
+      ],
+      "p_malignant": 0.4814992016635579
+    },
+    {
+      "node": 11,
+      "class_counts": [
+        0.816935496226963,
+        0.1830645037727872
+      ],
+      "p_malignant": 0.18306450377283295
+    },
+    {
+      "node": 12,
+      "class_counts": [
+        0.36055759377822466,
+        0.6394424062217737
+      ],
+      "p_malignant": 0.6394424062217747
+    },
+    {
+      "node": 14,
+      "class_counts": [
+        0.7556714758664721,
+        0.2443285241335527
+      ],
+      "p_malignant": 0.2443285241335466
+    },
+    {
+      "node": 15,
+      "class_counts": [
+        0.15938130464021508,
+        0.8406186953597877
+      ],
+      "p_malignant": 0.8406186953597853
+    },
+    {
+      "node": 19,
+      "class_counts": [
+        0.12449658553668362,
+        0.875503414463317
+      ],
+      "p_malignant": 0.8755034144633165
+    },
+    {
+      "node": 20,
+      "class_counts": [
+        0.8249709561180374,
+        0.17502904388197243
+      ],
+      "p_malignant": 0.17502904388197071
+    },
+    {
+      "node": 22,
+      "class_counts": [
+        0.22467780076333968,
+        0.7753221992366619
+      ],
+      "p_malignant": 0.7753221992366607
+    },
+    {
+      "node": 23,
+      "class_counts": [
+        1.0,
+        0.0
+      ],
+      "p_malignant": 0.0
+    },
+    {
+      "node": 25,
+      "class_counts": [
+        1.0,
+        0.0
+      ],
+      "p_malignant": 0.0
+    },
+    {
+      "node": 27,
+      "class_counts": [
+        1.0,
+        0.0
+      ],
+      "p_malignant": 0.0
+    },
+    {
+      "node": 28,
+      "class_counts": [
+        0.11869958217728521,
+        0.8813004178227047
+      ],
+      "p_malignant": 0.8813004178227135
+    }
+  ],
+  "tree_rules": "|--- color_hue_std <= 0.02\n|   |--- color_sat_std <= 0.06\n|   |   |--- asym_diagonal <= 0.31\n|   |   |   |--- color_darkness <= 0.40\n|   |   |   |   |--- class: 1\n|   |   |   |--- color_darkness >  0.40\n|   |   |   |   |--- class: 0\n|   |   |--- asym_diagonal >  0.31\n|   |   |   |--- color_darkness <= 0.24\n|   |   |   |   |--- class: 0\n|   |   |   |--- color_darkness >  0.24\n|   |   |   |   |--- class: 0\n|   |--- color_sat_std >  0.06\n|   |   |--- color_val_std <= 0.13\n|   |   |   |--- geom_convexity_defects <= 0.56\n|   |   |   |   |--- class: 0\n|   |   |   |--- geom_convexity_defects >  0.56\n|   |   |   |   |--- class: 1\n|   |   |--- color_val_std >  0.13\n|   |   |   |--- geom_area_ratio <= 0.06\n|   |   |   |   |--- class: 0\n|   |   |   |--- geom_area_ratio >  0.06\n|   |   |   |   |--- class: 1\n|--- color_hue_std >  0.02\n|   |--- geom_area_ratio <= 0.08\n|   |   |--- asym_diagonal <= 0.47\n|   |   |   |--- color_hue_std <= 0.02\n|   |   |   |   |--- class: 1\n|   |   |   |--- color_hue_std >  0.02\n|   |   |   |   |--- class: 0\n|   |   |--- asym_diagonal >  0.47\n|   |   |   |--- geom_perim_ratio <= 0.09\n|   |   |   |   |--- class: 1\n|   |   |   |--- geom_perim_ratio >  0.09\n|   |   |   |   |--- class: 0\n|   |--- geom_area_ratio >  0.08\n|   |   |--- asym_horizontal <= 0.00\n|   |   |   |--- class: 0\n|   |   |--- asym_horizontal >  0.00\n|   |   |   |--- border_gradient <= 0.03\n|   |   |   |   |--- class: 0\n|   |   |   |--- border_gradient >  0.03\n|   |   |   |   |--- class: 1\n",
+  "cases": [
+    {
+      "bucket": "true_positive_malignant",
+      "image_id": "ISIC_5536448",
+      "prob": 0.8813004178227047,
+      "verdict": "MALIGNANT",
+      "path": [
+        {
+          "node": 0,
+          "feature": "color_hue_std",
+          "scaled_value": 0.023455437272787094,
+          "raw_value": 0.0117277190085533,
+          "direction": ">",
+          "threshold_scaled": 0.017735431902110577
+        },
+        {
+          "node": 16,
+          "feature": "geom_area_ratio",
+          "scaled_value": 0.09776239842176437,
+          "raw_value": 0.0970001220703125,
+          "direction": ">",
+          "threshold_scaled": 0.08084967359900475
+        },
+        {
+          "node": 24,
+          "feature": "asym_horizontal",
+          "scaled_value": 0.09658386558294296,
+          "raw_value": 0.0913838120103035,
+          "direction": ">",
+          "threshold_scaled": 0.00039033421489875764
+        },
+        {
+          "node": 26,
+          "feature": "border_gradient",
+          "scaled_value": 0.07854264974594116,
+          "raw_value": 0.0963412597775459,
+          "direction": ">",
+          "threshold_scaled": 0.031843336299061775
+        }
+      ],
+      "leaf_counts": [
+        0.11869958217728521,
+        0.8813004178227047
+      ]
+    },
+    {
+      "bucket": "true_positive_malignant",
+      "image_id": "ISIC_7748442",
+      "prob": 0.8813004178227047,
+      "verdict": "MALIGNANT",
+      "path": [
+        {
+          "node": 0,
+          "feature": "color_hue_std",
+          "scaled_value": 0.9355749487876892,
+          "raw_value": 0.467787487276588,
+          "direction": ">",
+          "threshold_scaled": 0.017735431902110577
+        },
+        {
+          "node": 16,
+          "feature": "geom_area_ratio",
+          "scaled_value": 0.2810995876789093,
+          "raw_value": 0.2789077758789062,
+          "direction": ">",
+          "threshold_scaled": 0.08084967359900475
+        },
+        {
+          "node": 24,
+          "feature": "asym_horizontal",
+          "scaled_value": 0.4065363109111786,
+          "raw_value": 0.3846484626959875,
+          "direction": ">",
+          "threshold_scaled": 0.00039033421489875764
+        },
+        {
+          "node": 26,
+          "feature": "border_gradient",
+          "scaled_value": 0.06292764097452164,
+          "raw_value": 0.081027865409851,
+          "direction": ">",
+          "threshold_scaled": 0.031843336299061775
+        }
+      ],
+      "leaf_counts": [
+        0.11869958217728521,
+        0.8813004178227047
+      ]
+    },
+    {
+      "bucket": "false_negative_malignant",
+      "image_id": "ISIC_4907011",
+      "prob": 0.1681972617485841,
+      "verdict": "BENIGN",
+      "path": [
+        {
+          "node": 0,
+          "feature": "color_hue_std",
+          "scaled_value": 0.005300748161971569,
+          "raw_value": 0.0026503739657896,
+          "direction": "<=",
+          "threshold_scaled": 0.017735431902110577
+        },
+        {
+          "node": 1,
+          "feature": "color_sat_std",
+          "scaled_value": 0.01920395717024803,
+          "raw_value": 0.0116629800995747,
+          "direction": "<=",
+          "threshold_scaled": 0.05967814661562443
+        },
+        {
+          "node": 2,
+          "feature": "asym_diagonal",
+          "scaled_value": 1.0,
+          "raw_value": 0.9999999999885058,
+          "direction": ">",
+          "threshold_scaled": 0.3074759244918823
+        },
+        {
+          "node": 6,
+          "feature": "color_darkness",
+          "scaled_value": 0.09953189641237259,
+          "raw_value": 0.1119935388342979,
+          "direction": "<=",
+          "threshold_scaled": 0.24081003665924072
+        }
+      ],
+      "leaf_counts": [
+        0.8318027382514223,
+        0.1681972617485841
+      ]
+    },
+    {
+      "bucket": "false_negative_malignant",
+      "image_id": "ISIC_9805656",
+      "prob": 0.17502904388197243,
+      "verdict": "BENIGN",
+      "path": [
+        {
+          "node": 0,
+          "feature": "color_hue_std",
+          "scaled_value": 0.14253228902816772,
+          "raw_value": 0.0712661463374511,
+          "direction": ">",
+          "threshold_scaled": 0.017735431902110577
+        },
+        {
+          "node": 16,
+          "feature": "geom_area_ratio",
+          "scaled_value": 0.05624759569764137,
+          "raw_value": 0.0558090209960937,
+          "direction": "<=",
+          "threshold_scaled": 0.08084967359900475
+        },
+        {
+          "node": 17,
+          "feature": "asym_diagonal",
+          "scaled_value": 0.3918918967247009,
+          "raw_value": 0.3918918918908535,
+          "direction": "<=",
+          "threshold_scaled": 0.467388316988945
+        },
+        {
+          "node": 18,
+          "feature": "color_hue_std",
+          "scaled_value": 0.14253228902816772,
+          "raw_value": 0.0712661463374511,
+          "direction": ">",
+          "threshold_scaled": 0.017943578772246838
+        }
+      ],
+      "leaf_counts": [
+        0.8249709561180374,
+        0.17502904388197243
+      ]
+    },
+    {
+      "bucket": "false_positive_benign",
+      "image_id": "ISIC_0990969",
+      "prob": 0.8813004178227047,
+      "verdict": "MALIGNANT",
+      "path": [
+        {
+          "node": 0,
+          "feature": "color_hue_std",
+          "scaled_value": 0.020418649539351463,
+          "raw_value": 0.0102093251856111,
+          "direction": ">",
+          "threshold_scaled": 0.017735431902110577
+        },
+        {
+          "node": 16,
+          "feature": "geom_area_ratio",
+          "scaled_value": 0.2922798991203308,
+          "raw_value": 0.2900009155273437,
+          "direction": ">",
+          "threshold_scaled": 0.08084967359900475
+        },
+        {
+          "node": 24,
+          "feature": "asym_horizontal",
+          "scaled_value": 0.1291850209236145,
+          "raw_value": 0.1222297192089467,
+          "direction": ">",
+          "threshold_scaled": 0.00039033421489875764
+        },
+        {
+          "node": 26,
+          "feature": "border_gradient",
+          "scaled_value": 0.061002593487501144,
+          "raw_value": 0.0791400000452995,
+          "direction": ">",
+          "threshold_scaled": 0.031843336299061775
+        }
+      ],
+      "leaf_counts": [
+        0.11869958217728521,
+        0.8813004178227047
+      ]
+    },
+    {
+      "bucket": "false_positive_benign",
+      "image_id": "ISIC_5306652",
+      "prob": 0.8813004178227047,
+      "verdict": "MALIGNANT",
+      "path": [
+        {
+          "node": 0,
+          "feature": "color_hue_std",
+          "scaled_value": 0.02093251422047615,
+          "raw_value": 0.0104662574924556,
+          "direction": ">",
+          "threshold_scaled": 0.017735431902110577
+        },
+        {
+          "node": 16,
+          "feature": "geom_area_ratio",
+          "scaled_value": 0.5500730276107788,
+          "raw_value": 0.5457839965820312,
+          "direction": ">",
+          "threshold_scaled": 0.08084967359900475
+        },
+        {
+          "node": 24,
+          "feature": "asym_horizontal",
+          "scaled_value": 0.4177926182746887,
+          "raw_value": 0.3952987508459801,
+          "direction": ">",
+          "threshold_scaled": 0.00039033421489875764
+        },
+        {
+          "node": 26,
+          "feature": "border_gradient",
+          "scaled_value": 0.10148973017930984,
+          "raw_value": 0.118845097720623,
+          "direction": ">",
+          "threshold_scaled": 0.031843336299061775
+        }
+      ],
+      "leaf_counts": [
+        0.11869958217728521,
+        0.8813004178227047
+      ]
+    },
+    {
+      "bucket": "true_negative_benign",
+      "image_id": "ISIC_7911327",
+      "prob": 0.0,
+      "verdict": "BENIGN",
+      "path": [
+        {
+          "node": 0,
+          "feature": "color_hue_std",
+          "scaled_value": 0.3948376178741455,
+          "raw_value": 0.1974188027148432,
+          "direction": ">",
+          "threshold_scaled": 0.017735431902110577
+        },
+        {
+          "node": 16,
+          "feature": "geom_area_ratio",
+          "scaled_value": 0.14901961386203766,
+          "raw_value": 0.147857666015625,
+          "direction": ">",
+          "threshold_scaled": 0.08084967359900475
+        },
+        {
+          "node": 24,
+          "feature": "asym_horizontal",
+          "scaled_value": 0.0,
+          "raw_value": 0.0,
+          "direction": "<=",
+          "threshold_scaled": 0.00039033421489875764
+        }
+      ],
+      "leaf_counts": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "bucket": "true_negative_benign",
+      "image_id": "ISIC_6359866",
+      "prob": 0.0,
+      "verdict": "BENIGN",
+      "path": [
+        {
+          "node": 0,
+          "feature": "color_hue_std",
+          "scaled_value": 0.24278663098812103,
+          "raw_value": 0.1213933132549949,
+          "direction": ">",
+          "threshold_scaled": 0.017735431902110577
+        },
+        {
+          "node": 16,
+          "feature": "geom_area_ratio",
+          "scaled_value": 0.06174548342823982,
+          "raw_value": 0.0612640380859375,
+          "direction": "<=",
+          "threshold_scaled": 0.08084967359900475
+        },
+        {
+          "node": 17,
+          "feature": "asym_diagonal",
+          "scaled_value": 1.0,
+          "raw_value": 0.9999999999949368,
+          "direction": ">",
+          "threshold_scaled": 0.467388316988945
+        },
+        {
+          "node": 21,
+          "feature": "geom_perim_ratio",
+          "scaled_value": 0.10316257923841476,
+          "raw_value": 1.049678984256058,
+          "direction": ">",
+          "threshold_scaled": 0.0867110975086689
+        }
+      ],
+      "leaf_counts": [
+        1.0,
+        0.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "anchor_pipeline": "transparent_lr",
+  "buckets": {
+    "true_positive_malignant": [
+      "ISIC_0664841",
+      "ISIC_7748442"
+    ],
+    "false_negative_malignant": [
+      "ISIC_9420821",
+      "ISIC_2538516"
+    ],
+    "false_positive_benign": [
+      "ISIC_6569920",
+      "ISIC_2759370"
+    ],
+    "true_negative_benign": [
+      "ISIC_5313485",
+      "ISIC_3115416"
+    ]
+  }
+}

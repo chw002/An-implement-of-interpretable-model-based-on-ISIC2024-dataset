@@ -1,0 +1,2 @@
+pipeline,feature_set,column,source,is_model_input
+multitask_cnn,image_only,image_pixel_tensor,pixel_derived,True

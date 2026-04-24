@@ -1,0 +1,46 @@
+# Decision tree rules (max_depth=4, min_samples_leaf=30, threshold τ=0.841)
+# Feature values are min–max scaled to [0,1] using train-fit ranges.
+
+|--- color_hue_std <= 0.02
+|   |--- color_sat_std <= 0.06
+|   |   |--- asym_diagonal <= 0.31
+|   |   |   |--- color_darkness <= 0.40
+|   |   |   |   |--- class: 1
+|   |   |   |--- color_darkness >  0.40
+|   |   |   |   |--- class: 0
+|   |   |--- asym_diagonal >  0.31
+|   |   |   |--- color_darkness <= 0.24
+|   |   |   |   |--- class: 0
+|   |   |   |--- color_darkness >  0.24
+|   |   |   |   |--- class: 0
+|   |--- color_sat_std >  0.06
+|   |   |--- color_val_std <= 0.13
+|   |   |   |--- geom_convexity_defects <= 0.56
+|   |   |   |   |--- class: 0
+|   |   |   |--- geom_convexity_defects >  0.56
+|   |   |   |   |--- class: 1
+|   |   |--- color_val_std >  0.13
+|   |   |   |--- geom_area_ratio <= 0.06
+|   |   |   |   |--- class: 0
+|   |   |   |--- geom_area_ratio >  0.06
+|   |   |   |   |--- class: 1
+|--- color_hue_std >  0.02
+|   |--- geom_area_ratio <= 0.08
+|   |   |--- asym_diagonal <= 0.47
+|   |   |   |--- color_hue_std <= 0.02
+|   |   |   |   |--- class: 1
+|   |   |   |--- color_hue_std >  0.02
+|   |   |   |   |--- class: 0
+|   |   |--- asym_diagonal >  0.47
+|   |   |   |--- geom_perim_ratio <= 0.09
+|   |   |   |   |--- class: 1
+|   |   |   |--- geom_perim_ratio >  0.09
+|   |   |   |   |--- class: 0
+|   |--- geom_area_ratio >  0.08
+|   |   |--- asym_horizontal <= 0.00
+|   |   |   |--- class: 0
+|   |   |--- asym_horizontal >  0.00
+|   |   |   |--- border_gradient <= 0.03
+|   |   |   |   |--- class: 0
+|   |   |   |--- border_gradient >  0.03
+|   |   |   |   |--- class: 1

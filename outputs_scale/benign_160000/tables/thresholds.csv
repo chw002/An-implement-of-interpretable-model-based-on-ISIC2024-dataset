@@ -1,0 +1,6 @@
+pipeline,transparency_tag,threshold,strategy
+multitask_cnn,image_only_baseline,0.0007203940767794847,youden
+hard_cbm,interpretable_partial,0.2036294937133789,youden
+glassbox_nam,interpretable_partial,0.020360639318823814,youden
+transparent_lr,fully_auditable,0.5264518365517447,youden
+transparent_tree,fully_auditable,0.846227171929784,youden

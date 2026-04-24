@@ -1,0 +1,18 @@
+{
+  "threshold": 0.1769598126411438,
+  "accuracy": 0.6327432052149753,
+  "auc": 0.6964277809747244,
+  "f1": 0.0036722071897951295,
+  "precision": 0.0018412636883418936,
+  "recall": 0.6551724137931034,
+  "balanced_accuracy": 0.6439462126018719,
+  "specificity": 0.6327200114106404,
+  "tn": 17744,
+  "fp": 10300,
+  "fn": 10,
+  "tp": 19,
+  "n_pos": 29,
+  "n_neg": 28044,
+  "pipeline": "hard_cbm",
+  "transparency_tag": "interpretable_partial"
+}

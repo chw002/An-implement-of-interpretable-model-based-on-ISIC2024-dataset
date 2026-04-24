@@ -1,0 +1,98 @@
+project:
+  name: glassderm
+  seed: 1337
+  device: auto
+data:
+  raw_dir: /home/chw/222/data/raw/isic2024_official
+  images_dir: /home/chw/222/data/raw/isic2024_official/ISIC_2024_Permissive_Training_Input
+  gt_csv: /home/chw/222/data/raw/isic2024_official/ISIC_2024_Permissive_Training_GroundTruth.csv
+  supplement_csv: /home/chw/222/data/raw/isic2024_official/ISIC_2024_Permissive_Training_Supplement.csv
+  metadata_csv: /home/chw/222/data/raw/isic2024_official/ISIC_2024_Permissive_Training_Input/metadata.csv
+  processed_dir: data/processed
+  features_dir: data/features
+  cache_dir: data/cache
+  sample:
+    keep_all_malignant: true
+    n_benign: null
+    seed: 1337
+  split:
+    method: patient_disjoint
+    val_fraction: 0.15
+    test_fraction: 0.15
+    seed: 1337
+  features_cache: data/features/transparent_features.parquet
+  forbidden_metadata_prefixes:
+  - tbp_lv_
+  - tbp_
+  - iddx
+  - mel_
+  - anatom_
+  forbidden_metadata_exact:
+  - age_approx
+  - sex
+  - anatom_site_general
+  - clin_size_long_diam_mm
+  - image_type
+  - tbp_tile_type
+  - attribution
+  - copyright_license
+  - A
+  - B
+  - C
+  - D
+image:
+  size: 224
+  mean:
+  - 0.485
+  - 0.456
+  - 0.406
+  std:
+  - 0.229
+  - 0.224
+  - 0.225
+train:
+  batch_size: 64
+  num_workers: 4
+  epochs: 3
+  lr: 0.0003
+  weight_decay: 0.0001
+  optimizer: adamw
+  scheduler: cosine
+  backbone: efficientnet_b0
+  pretrained: true
+  amp: true
+  concept_loss_weight: 1.0
+  label_loss_weight: 1.0
+  grad_clip: 1.0
+  log_every: 50
+pipelines:
+  multitask_cnn:
+    enabled: true
+  hard_cbm:
+    enabled: true
+    concept_sup_weight: 2.0
+  glassbox_nam:
+    enabled: true
+    hidden: 64
+    concept_sup_weight: 2.0
+  transparent_lr:
+    enabled: true
+    logistic_c: 0.5
+  transparent_tree:
+    enabled: true
+    max_depth: 4
+    min_samples_leaf: 30
+evaluate:
+  threshold_strategy: youden
+  fixed_threshold: 0.5
+outputs:
+  root: outputs_scale/benign_80000
+  checkpoints: outputs_scale/benign_80000/checkpoints
+  tables: outputs_scale/benign_80000/tables
+  figures: outputs_scale/benign_80000/figures
+  reports: outputs_scale/benign_80000/reports
+  case_studies: outputs_scale/benign_80000/case_studies
+  logs: outputs_scale/benign_80000/logs
+analysis:
+  n_case_studies_per_bucket: 2
+  shape_function_points: 100

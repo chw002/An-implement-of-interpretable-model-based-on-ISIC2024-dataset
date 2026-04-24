@@ -1,0 +1,13 @@
+# HardCBM linear readout
+
+logit = w_A · A + w_B · B + w_C · C + w_D · D + bias
+
+  w_A   = -1.0453    (Asymmetry)
+  w_B   = -0.8967    (Border)
+  w_C   = -1.1986    (Color)
+  w_D   = -0.2115    (Diameter)
+  bias  = -0.2408
+  τ     = 0.204   (validation-tuned)
+
+CNN concepts are supervised against pixel-derived ABCD proxies.
+No ISIC/TBP metadata enters this pipeline.

@@ -1,0 +1,12 @@
+{
+  "name": "glassbox_nam",
+  "transparency": "image_only_additive_readout_over_cnn_concepts",
+  "transparency_tag": "interpretable_partial",
+  "threshold": 0.017904167994856834,
+  "feature_manifest": [
+    "cnn_concept_A_asymmetry",
+    "cnn_concept_B_border",
+    "cnn_concept_C_color",
+    "cnn_concept_D_diameter"
+  ]
+}

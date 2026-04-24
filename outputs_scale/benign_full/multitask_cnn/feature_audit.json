@@ -1,0 +1,10 @@
+{
+  "pipeline": "multitask_cnn",
+  "feature_set": "image_only",
+  "model_input_columns": [
+    "image_pixel_tensor"
+  ],
+  "classification": {
+    "image_pixel_tensor": "pixel_derived"
+  }
+}

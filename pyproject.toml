@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "glassderm"
+version = "1.0.0"
+description = "Four-pipeline interpretable neuro-symbolic dermatology benchmark on ISIC 2024"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "GlassDerm authors" }]
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scikit-learn>=1.4",
+    "scipy>=1.11",
+    "opencv-python>=4.9",
+    "pillow>=10.2",
+    "matplotlib>=3.8",
+    "pyyaml>=6.0",
+    "tqdm>=4.66",
+    "torch>=2.1",
+    "torchvision>=0.16",
+    "kaggle>=1.6",
+]
+
+[project.scripts]
+glassderm = "glassderm.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

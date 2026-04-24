@@ -1,0 +1,9 @@
+{
+  "name": "multitask_cnn",
+  "transparency": "image_only_black_box_head",
+  "transparency_tag": "image_only_baseline",
+  "threshold": 0.01612251251935959,
+  "feature_manifest": [
+    "image_pixel_tensor"
+  ]
+}

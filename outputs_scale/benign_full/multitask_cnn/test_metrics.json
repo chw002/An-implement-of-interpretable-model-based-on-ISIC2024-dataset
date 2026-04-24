@@ -1,0 +1,18 @@
+{
+  "threshold": 0.011083313263952732,
+  "accuracy": 0.9119794820646172,
+  "auc": 0.8351310010377782,
+  "f1": 0.011995201919232307,
+  "precision": 0.006067961165048544,
+  "recall": 0.5172413793103449,
+  "balanced_accuracy": 0.7148145279093445,
+  "specificity": 0.9123876765083441,
+  "tn": 25587,
+  "fp": 2457,
+  "fn": 14,
+  "tp": 15,
+  "n_pos": 29,
+  "n_neg": 28044,
+  "pipeline": "multitask_cnn",
+  "transparency_tag": "image_only_baseline"
+}

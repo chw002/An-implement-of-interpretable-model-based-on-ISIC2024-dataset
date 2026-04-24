@@ -1,0 +1,16 @@
+{
+  "pipeline": "glassbox_nam",
+  "feature_set": "image_only",
+  "model_input_columns": [
+    "cnn_concept_A_asymmetry",
+    "cnn_concept_B_border",
+    "cnn_concept_C_color",
+    "cnn_concept_D_diameter"
+  ],
+  "classification": {
+    "cnn_concept_A_asymmetry": "pixel_derived",
+    "cnn_concept_B_border": "pixel_derived",
+    "cnn_concept_C_color": "pixel_derived",
+    "cnn_concept_D_diameter": "pixel_derived"
+  }
+}

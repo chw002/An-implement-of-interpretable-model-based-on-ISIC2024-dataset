@@ -1,0 +1,410 @@
+{
+  "pipeline": "transparent_lr",
+  "transparency": "fully_auditable_logistic_on_pixel_features",
+  "transparency_tag": "fully_auditable",
+  "threshold": 0.5264518365517447,
+  "bias": -0.819612184962859,
+  "n_features": 20,
+  "weights_ranked": [
+    {
+      "feature": "color_rgb_std_mean",
+      "weight": -17.37305841232384
+    },
+    {
+      "feature": "color_val_std",
+      "weight": 17.1301145122793
+    },
+    {
+      "feature": "color_sat_std",
+      "weight": -6.977591119301781
+    },
+    {
+      "feature": "geom_perim_ratio",
+      "weight": 6.188238366225134
+    },
+    {
+      "feature": "geom_compactness",
+      "weight": -3.89750922746351
+    },
+    {
+      "feature": "geom_convexity_defects",
+      "weight": 3.269345000704449
+    },
+    {
+      "feature": "color_hue_std",
+      "weight": 2.9251141580110223
+    },
+    {
+      "feature": "border_gradient",
+      "weight": 2.784328929324085
+    },
+    {
+      "feature": "color_darkness",
+      "weight": 1.7979875767008056
+    },
+    {
+      "feature": "asym_centroid_offset",
+      "weight": 1.6481571457275193
+    },
+    {
+      "feature": "geom_area_ratio",
+      "weight": -1.1586348824666224
+    },
+    {
+      "feature": "geom_eccentricity",
+      "weight": -1.0318686870093154
+    },
+    {
+      "feature": "border_radial_variance",
+      "weight": -0.8631741544865973
+    },
+    {
+      "feature": "color_variegation",
+      "weight": 0.6599124123661005
+    },
+    {
+      "feature": "asym_vertical",
+      "weight": 0.6022718409239296
+    },
+    {
+      "feature": "geom_aspect_ratio",
+      "weight": 0.3869894238288343
+    },
+    {
+      "feature": "asym_diagonal",
+      "weight": -0.28060950284717895
+    },
+    {
+      "feature": "geom_solidity",
+      "weight": -0.22043304574174039
+    },
+    {
+      "feature": "color_n_regions",
+      "weight": -0.0940247296676839
+    },
+    {
+      "feature": "asym_horizontal",
+      "weight": 0.02668454336934298
+    }
+  ],
+  "scaler": {
+    "mins": {
+      "geom_area_ratio": 0.0,
+      "geom_perim_ratio": 0.0,
+      "geom_compactness": 0.0,
+      "geom_solidity": 0.0,
+      "geom_convexity_defects": 0.0,
+      "geom_eccentricity": 0.0,
+      "geom_aspect_ratio": 0.0,
+      "asym_horizontal": 0.0,
+      "asym_vertical": 0.0,
+      "asym_diagonal": 0.0,
+      "asym_centroid_offset": 0.0,
+      "border_radial_variance": 1.0867124193978003e-13,
+      "border_gradient": 0.0094666276127099,
+      "color_hue_std": 0.0,
+      "color_sat_std": 0.002035860460396,
+      "color_val_std": 0.0015680862760058,
+      "color_rgb_std_mean": 0.0008521851264793,
+      "color_darkness": 0.0139080265625972,
+      "color_n_regions": 0.0,
+      "color_variegation": -5.58110620368793e-09
+    },
+    "maxs": {
+      "geom_area_ratio": 0.9922027587890624,
+      "geom_perim_ratio": 10.174997344993422,
+      "geom_compactness": 9.0,
+      "geom_solidity": 1.0,
+      "geom_convexity_defects": 0.76,
+      "geom_eccentricity": 0.9999997657292672,
+      "geom_aspect_ratio": 1.0,
+      "asym_horizontal": 0.9619527847789092,
+      "asym_vertical": 0.9657066755435896,
+      "asym_diagonal": 0.9999999999985858,
+      "asym_centroid_offset": 0.5,
+      "border_radial_variance": 1.0,
+      "border_gradient": 1.0,
+      "color_hue_std": 0.5,
+      "color_sat_std": 0.5,
+      "color_val_std": 0.5,
+      "color_rgb_std_mean": 0.5,
+      "color_darkness": 0.9996592456427016,
+      "color_n_regions": 0.6666666666666666,
+      "color_variegation": 0.7439341903587837
+    }
+  },
+  "cases": [
+    {
+      "bucket": "true_positive_malignant",
+      "image_id": "ISIC_0664841",
+      "prob": 0.972797964802099,
+      "verdict": "MALIGNANT",
+      "logit": 3.576884625151553,
+      "bias": -0.819612184962859,
+      "top_contributions": [
+        {
+          "feature": "color_val_std",
+          "contribution": 2.366285569746722
+        },
+        {
+          "feature": "color_hue_std",
+          "contribution": 2.027854250959791
+        },
+        {
+          "feature": "geom_perim_ratio",
+          "contribution": 1.9468083966384497
+        },
+        {
+          "feature": "color_rgb_std_mean",
+          "contribution": -1.940334794351031
+        },
+        {
+          "feature": "geom_convexity_defects",
+          "contribution": 1.8927786846183652
+        },
+        {
+          "feature": "color_darkness",
+          "contribution": 1.0786153744264353
+        }
+      ]
+    },
+    {
+      "bucket": "true_positive_malignant",
+      "image_id": "ISIC_7748442",
+      "prob": 0.9606542263393625,
+      "verdict": "MALIGNANT",
+      "logit": 3.195225972826599,
+      "bias": -0.819612184962859,
+      "top_contributions": [
+        {
+          "feature": "color_hue_std",
+          "contribution": 2.736663603946297
+        },
+        {
+          "feature": "geom_convexity_defects",
+          "contribution": 1.8927786846183652
+        },
+        {
+          "feature": "geom_perim_ratio",
+          "contribution": 1.2927268999549562
+        },
+        {
+          "feature": "color_rgb_std_mean",
+          "contribution": -1.1054707358054805
+        },
+        {
+          "feature": "color_val_std",
+          "contribution": 0.9061962123106194
+        },
+        {
+          "feature": "geom_eccentricity",
+          "contribution": -0.87077850631266
+        }
+      ]
+    },
+    {
+      "bucket": "false_negative_malignant",
+      "image_id": "ISIC_9420821",
+      "prob": 0.1472039335972497,
+      "verdict": "BENIGN",
+      "logit": -1.7567015120886795,
+      "bias": -0.819612184962859,
+      "top_contributions": [
+        {
+          "feature": "color_rgb_std_mean",
+          "contribution": -4.218234265560251
+        },
+        {
+          "feature": "color_val_std",
+          "contribution": 4.006132914354884
+        },
+        {
+          "feature": "color_sat_std",
+          "contribution": -1.3571373044590624
+        },
+        {
+          "feature": "geom_convexity_defects",
+          "contribution": 0.8603539475538023
+        },
+        {
+          "feature": "geom_compactness",
+          "contribution": -0.8193373583254103
+        },
+        {
+          "feature": "geom_eccentricity",
+          "contribution": -0.7945392683953403
+        }
+      ]
+    },
+    {
+      "bucket": "false_negative_malignant",
+      "image_id": "ISIC_2538516",
+      "prob": 0.23225936978425285,
+      "verdict": "BENIGN",
+      "logit": -1.195597234626191,
+      "bias": -0.819612184962859,
+      "top_contributions": [
+        {
+          "feature": "color_rgb_std_mean",
+          "contribution": -1.0264992690134926
+        },
+        {
+          "feature": "color_val_std",
+          "contribution": 1.010440290360266
+        },
+        {
+          "feature": "geom_eccentricity",
+          "contribution": -0.9034774175908912
+        },
+        {
+          "feature": "color_darkness",
+          "contribution": 0.5083609965286848
+        },
+        {
+          "feature": "geom_convexity_defects",
+          "contribution": 0.3441415790215209
+        },
+        {
+          "feature": "geom_compactness",
+          "contribution": -0.2938357711276571
+        }
+      ]
+    },
+    {
+      "bucket": "false_positive_benign",
+      "image_id": "ISIC_6569920",
+      "prob": 0.9945090942693346,
+      "verdict": "MALIGNANT",
+      "logit": 5.199156022639357,
+      "bias": -0.819612184962859,
+      "top_contributions": [
+        {
+          "feature": "color_hue_std",
+          "contribution": 2.7783686304153443
+        },
+        {
+          "feature": "geom_convexity_defects",
+          "contribution": 2.236920263639886
+        },
+        {
+          "feature": "color_val_std",
+          "contribution": 2.2016668840899123
+        },
+        {
+          "feature": "color_rgb_std_mean",
+          "contribution": -1.5416752806748366
+        },
+        {
+          "feature": "geom_perim_ratio",
+          "contribution": 1.2168731322043966
+        },
+        {
+          "feature": "geom_eccentricity",
+          "contribution": -0.8324891999231121
+        }
+      ]
+    },
+    {
+      "bucket": "false_positive_benign",
+      "image_id": "ISIC_2759370",
+      "prob": 0.9869821130845902,
+      "verdict": "MALIGNANT",
+      "logit": 4.328327588435558,
+      "bias": -0.819612184962859,
+      "top_contributions": [
+        {
+          "feature": "color_hue_std",
+          "contribution": 2.173842717551826
+        },
+        {
+          "feature": "border_gradient",
+          "contribution": 1.968144407203683
+        },
+        {
+          "feature": "color_darkness",
+          "contribution": 1.3400984603217434
+        },
+        {
+          "feature": "geom_perim_ratio",
+          "contribution": 1.111148205668854
+        },
+        {
+          "feature": "color_sat_std",
+          "contribution": -1.0495859643918741
+        },
+        {
+          "feature": "color_val_std",
+          "contribution": 0.9227981426195642
+        }
+      ]
+    },
+    {
+      "bucket": "true_negative_benign",
+      "image_id": "ISIC_5313485",
+      "prob": 0.008901890708739518,
+      "verdict": "BENIGN",
+      "logit": -4.712549836363386,
+      "bias": -0.819612184962859,
+      "top_contributions": [
+        {
+          "feature": "color_sat_std",
+          "contribution": -6.614516613303533
+        },
+        {
+          "feature": "border_gradient",
+          "contribution": 2.784328929324085
+        },
+        {
+          "feature": "geom_compactness",
+          "contribution": -2.6369161064468787
+        },
+        {
+          "feature": "color_val_std",
+          "contribution": 2.5443574889779614
+        },
+        {
+          "feature": "color_rgb_std_mean",
+          "contribution": -2.188320711938055
+        },
+        {
+          "feature": "color_darkness",
+          "contribution": 1.7480331447688067
+        }
+      ]
+    },
+    {
+      "bucket": "true_negative_benign",
+      "image_id": "ISIC_3115416",
+      "prob": 0.010762173233871141,
+      "verdict": "BENIGN",
+      "logit": -4.520897266923775,
+      "bias": -0.819612184962859,
+      "top_contributions": [
+        {
+          "feature": "color_sat_std",
+          "contribution": -6.439889944614227
+        },
+        {
+          "feature": "geom_compactness",
+          "contribution": -3.0674245445305703
+        },
+        {
+          "feature": "border_gradient",
+          "contribution": 2.784328929324085
+        },
+        {
+          "feature": "color_val_std",
+          "contribution": 2.472676009921057
+        },
+        {
+          "feature": "color_rgb_std_mean",
+          "contribution": -1.928705248972069
+        },
+        {
+          "feature": "color_darkness",
+          "contribution": 1.740986839103548
+        }
+      ]
+    }
+  ]
+}

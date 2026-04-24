@@ -1,0 +1,18 @@
+{
+  "threshold": 0.020360639318823814,
+  "accuracy": 0.8951305524881559,
+  "auc": 0.7879901779961539,
+  "f1": 0.008754208754208754,
+  "precision": 0.004420265215912955,
+  "recall": 0.4482758620689655,
+  "balanced_accuracy": 0.6719342511029466,
+  "specificity": 0.8955926401369276,
+  "tn": 25116,
+  "fp": 2928,
+  "fn": 16,
+  "tp": 13,
+  "n_pos": 29,
+  "n_neg": 28044,
+  "pipeline": "glassbox_nam",
+  "transparency_tag": "interpretable_partial"
+}

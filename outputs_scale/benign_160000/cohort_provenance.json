@@ -1,0 +1,33 @@
+{
+  "scale_label": "benign_160000",
+  "benign_budget": 160000,
+  "pipelines_requested": [
+    "multitask_cnn",
+    "hard_cbm",
+    "glassbox_nam",
+    "transparent_lr",
+    "transparent_tree"
+  ],
+  "skip_cnn": false,
+  "epochs_override": null,
+  "counts": {
+    "train": {
+      "images": 155296,
+      "malignant": 237,
+      "benign": 155059,
+      "patients": 444
+    },
+    "val": {
+      "images": 34108,
+      "malignant": 28,
+      "benign": 34080,
+      "patients": 95
+    },
+    "test": {
+      "images": 28073,
+      "malignant": 29,
+      "benign": 28044,
+      "patients": 95
+    }
+  }
+}

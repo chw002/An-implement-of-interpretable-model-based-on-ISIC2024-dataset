@@ -1,0 +1,18 @@
+{
+  "threshold": 0.8474187272476801,
+  "accuracy": 0.9458198268799202,
+  "auc": 0.7740865339687879,
+  "f1": 0.014257939079714841,
+  "precision": 0.00726552179656539,
+  "recall": 0.3793103448275862,
+  "balanced_accuracy": 0.6628579965472976,
+  "specificity": 0.946405648267009,
+  "tn": 26541,
+  "fp": 1503,
+  "fn": 18,
+  "tp": 11,
+  "n_pos": 29,
+  "n_neg": 28044,
+  "pipeline": "transparent_tree",
+  "transparency_tag": "fully_auditable"
+}

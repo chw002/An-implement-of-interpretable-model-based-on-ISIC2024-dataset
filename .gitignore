@@ -1,0 +1,28 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.env
+*.egg-info/
+
+# Tooling / IDE state
+.claude/
+.codex
+.vscode/
+.idea/
+
+data/raw/
+data/processed/
+data/features/
+data/cache/
+outputs/
+
+*.log
+*.pth
+*.pt
+*.onnx
+*.npy
+*.npz
+
+# Generated from Markdown sources; regenerate via scripts/make_*_docx.py
+*.docx

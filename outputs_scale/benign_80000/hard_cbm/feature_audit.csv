@@ -1,0 +1,5 @@
+pipeline,feature_set,column,source,is_model_input
+hard_cbm,image_only,cnn_concept_A_asymmetry,pixel_derived,True
+hard_cbm,image_only,cnn_concept_B_border,pixel_derived,True
+hard_cbm,image_only,cnn_concept_C_color,pixel_derived,True
+hard_cbm,image_only,cnn_concept_D_diameter,pixel_derived,True
